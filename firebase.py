@@ -28,13 +28,13 @@ def dht_data():
 
 firebase_url = 'https://fire-detect-d2b0b-default-rtdb.firebaseio.com/random.json'
 auth_data = {
-    "email": "imtiazul.habd@gmail.com",
-    "password": "Fire789",
+    "email": "<email>",
+    "password": "<password>",
     "returnsecuretoken": True
 }
 
 # Authenticate and get localId
-auth_response = urequests.post("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyC7L2GwAjP11RKjlJd9K-Qdzb1lO6mlBA8",
+auth_response = urequests.post("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=<key>",
                                json=auth_data)
 auth_response_data = auth_response.json()
 print(auth_response_data)
